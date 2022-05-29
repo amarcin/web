@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState, useEffect} from "react";
+
+const blogQuery = `
+{
+  blogPostCollection {
+    items {
+      title
+      author
+      postDate
+      article {json}
+    }
+  }
+}
+`
 
 function App() {
+  // define the initial state
+  const [page, setPage] = useState(null);
+
+  // show a loading screen case the data hasn't arrived yet
+  if (!page) {
+    return "Loading...";
+  }
+
+  // return statement and JSX template.
+  // ...
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <h1>
+      Homepage
+    </h1>
   );
 }
 
