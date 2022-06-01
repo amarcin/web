@@ -6,6 +6,7 @@ import SwiperCore, { Navigation } from 'swiper'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
+import Loader from '../Loader/Loader'
 
 SwiperCore.use([Navigation])
 
@@ -45,6 +46,10 @@ const Carousel = () => {
   useEffect(() => {
     getCarouselSlides()
   }, [getCarouselSlides])
+
+  if (isCarouselLoading) {
+    return <Loader />
+  }
 
   // if no slides, don't render component
   if (!Array.isArray(carouselSlides) || !carouselSlides.length) {
