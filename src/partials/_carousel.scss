@@ -110,9 +110,9 @@
   }
 }
 
-.swiper-container {
+.swiper {
   .swiper-button-prev,
-  .swipter-button-next {
+  .swiper-button-next {
     color: $white;
     top: auto;
     bottom: 20px;
@@ -128,13 +128,13 @@
   }
 
   .swiper-button-prev,
-  .swiper-container-rtl .swipter-button-next {
+  .swiper-container-rtl .swiper-button-next {
     right: auto;
     left: 50%;
     margin-left: -44px;
   }
 
-  .swipter-button-next,
+  .swiper-button-next,
   .swiper-container-rtl .swiper-button-prev {
     right: auto;
     left: 50%;
