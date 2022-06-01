@@ -1,4 +1,4 @@
-
+import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <h1>
         Hello World!
       </h1>
+      <Carousel />
     </div>
   )
 }
