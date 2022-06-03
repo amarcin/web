@@ -4,8 +4,10 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: relative;
+  position: fixed;
   z-index: 2;
+  overflow: hidden;
+  width: 100%;
 }
 
 .navbar-logo {
@@ -23,22 +25,15 @@
   text-align: center;
   width: 70vw;
   justify-content: end;
-  margin-right: 2rem;
 }
 
 .nav-links {
   color: $white;
   text-decoration: none;
   padding: 0.5rem 1rem;
-}
-.nav-links {
   background-color: $primaryColor;
   border-radius: 10px;
   transition: all 0.2s ease-out;
-}
-
-.fa-solid {
-  color: $white;
 }
 
 .menu-icon {
@@ -46,15 +41,12 @@
 }
 
 @media screen and (max-width: $breakPoint) {
-  .NavbarItems {
-    position: relative;
-  }
 
   .nav-menu {
+    position: inherit;
     display: flex;
     flex-direction: column;
     width: 40%;
-    position: absolute;
     top: 80px;
     left: -100%;
     opacity: 1;
@@ -62,27 +54,30 @@
   }
 
   .nav-menu.active {
+    position: inherit;
     left: 0;
     opacity: 1;
+    width: 40%;
     transition: all 0.5s ease;
   }
 
   .nav-links {
     text-align: center;
+    justify-content: center;
     padding: 2rem;
-    width: 100%;
+    width: 175px;
     display: table;
+    font-size: x-large;
   }
 
   .nav-links:hover {
-    background-color: $textColorAlt;
+    color: $textColorAlt;
   }
 
   .navbar-logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+    left: 10px;
+
   }
 
   .menu-icon {
@@ -93,10 +88,6 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-  }
-
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
+    color: $white;
   }
 }
