@@ -6,7 +6,6 @@
   font-size: 1.2rem;
   position: fixed;
   z-index: 2;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -19,6 +18,7 @@
 
 .nav-menu {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(5,auto);
   grid-gap: 10px;
   list-style: none;
@@ -46,7 +46,7 @@
     position: inherit;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: fit-content;
     top: 80px;
     right: -100%;
     opacity: 1;
@@ -54,8 +54,8 @@
   }
 
   .nav-menu.active {
-    position: inherit;
-    right: -200px;
+    position: absolute;
+    right: 20px;
     opacity: 1;
     transition: all 0.5s ease;
   }

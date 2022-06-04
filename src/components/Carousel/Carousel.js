@@ -58,7 +58,7 @@ const Carousel = () => {
 
   return (
     <div className='carousel'>
-      <Swiper navigation loop>
+      <Swiper navigation loop centeredSlides slidesPerView={'1.2'} spaceBetween={100}>
         {carouselSlides.map((item) => {
           const {id, slideBg, slideTitle, slideDescription} = item
           return (
