@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import {client} from '../../client'
 import CarouselSlide from './CarouselSlide'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation } from 'swiper'
+import { Swiper, SwiperSlide, } from 'swiper/react'
+import SwiperCore, { Navigation, Pagination } from 'swiper'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
@@ -58,7 +58,10 @@ const Carousel = () => {
 
   return (
     <div className='carousel'>
-      <Swiper navigation loop centeredSlides slidesPerView={'1.2'} spaceBetween={100}>
+      <Swiper navigation pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]} loop centeredSlides slidesPerView={'1.2'} spaceBetween={100}>
         {carouselSlides.map((item) => {
           const {id, slideBg, slideTitle, slideDescription} = item
           return (

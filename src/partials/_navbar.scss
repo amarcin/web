@@ -10,10 +10,9 @@
 }
 
 .navbar-logo {
-  color: $white;
   justify-self: start;
   margin-left: 20px;
-  cursor: pointer;
+  height: 40px;
 }
 
 .nav-menu {
@@ -31,9 +30,9 @@
   color: $white;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  background-color: $primaryColor;
   border-radius: 10px;
   transition: all 0.2s ease-out;
+  background-color: $primaryColorClear;
 }
 
 .menu-icon {
@@ -58,35 +57,44 @@
     right: 20px;
     opacity: 1;
     transition: all 0.5s ease;
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+    border-color: $borderColor;
   }
 
   .nav-links {
     text-align: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 28px;
     width: 175px;
+    height: fit-content;
     display: table;
     font-size: x-large;
   }
 
   .nav-links:hover {
-    color: $textColorAlt;
+    outline-style: solid;
   }
 
   .navbar-logo {
     position: absolute;
     left: 10px;
-
+    height: 30px;
   }
 
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    right: 30px;
     font-size: 1.8rem;
-    cursor: pointer;
     color: $white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .menu-icon:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }

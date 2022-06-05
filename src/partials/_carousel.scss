@@ -63,6 +63,14 @@
   }
 }
 
+.swiper-pagination {
+  opacity: 0;
+
+  @media (max-width: $breakPoint){
+    opacity: 1;
+  }
+}
+
 .swiper {
   .swiper-button-prev,
   .swiper-button-next {
