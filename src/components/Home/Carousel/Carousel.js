@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import {client} from '../../client'
+import {client} from '../../../client'
 import CarouselSlide from './CarouselSlide'
 import { Swiper, SwiperSlide, } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
