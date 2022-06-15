@@ -15,15 +15,17 @@ const options = {
 }
 
 const BlogPost = (props) => {
-  const { id, postTitle, postArticle, postDate } = props
+  const { id, postTitle, postByline, postArticle, postDate } = props
 
   return (
     <div className='postWrap'>
-      <div className='articleWrap'>
+      <div className='titleDate'>
         <h2> {postTitle} </h2>
         <h6> {postDate} </h6>
-        <div className='article'> {documentToReactComponents(postArticle, options)} </div>
-        <a href='/' className='blog-btn'>Continue Reading</a>
+      <div>
+          <h3> {postByline} </h3>
+      </div>
+        {/* <div className='article'> {documentToReactComponents(postArticle, options)} </div> */}
       </div>
     </div>
   )

@@ -32,7 +32,7 @@
   padding: 0.5rem 1rem;
   border-radius: 10px;
   transition: all 0.2s ease-out;
-  background-color: $primaryColorClear;
+  background-color: $blueClear;
 }
 
 .menu-icon {
@@ -59,7 +59,7 @@
     transition: all 0.5s ease;
     border-radius: 25px;
     backdrop-filter: blur(3px);
-    border-color: $borderColor;
+    border-color: $darkGrey;
   }
 
   .nav-links {

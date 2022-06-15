@@ -14,7 +14,8 @@ const Blog = () => {
       const postTitle = fields.title
       const postArticle = fields.article
       const postDate = fields.postDate
-      const updatedPosts = { id, postTitle, postArticle, postDate }
+      const postByline = fields.byline
+      const updatedPosts = { id, postTitle, postByline, postArticle, postDate }
       return updatedPosts
     })
     setBlogPosts(cleanPosts)
@@ -53,10 +54,10 @@ const Blog = () => {
     <div className='blog'>
       <div className="blog-card">
         {blogPosts.map((item) => {
-          const {id, postTitle, postArticle, postDate} = item
+          const {id, postTitle, postByline, postArticle, postDate} = item
           return (
-            <div>
-              <BlogPost key={id} postTitle={postTitle} postArticle={postArticle} postDate={postDate} />
+            <div className='blog-post'>
+              <BlogPost key={id} postTitle={postTitle} postByline={postByline} postArticle={postArticle} postDate={postDate} />
             </div>
           ) 
         })} 

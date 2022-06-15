@@ -1,74 +1,65 @@
 .blog {
   position: relative;
-  z-index: 2;
   top: 80px;
+  padding:40px;
 }
 
-.blog-card {
-  padding: 40px;
-  outline: $borderColor;
+.blogCard {
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-post {
+  justify-content: center;
+  align-items: center;
+}
+
+div + div { 
+  margin-top: 20px;
 }
 
 .postWrap{
   position: relative;
-  display: flex;
-  height: 600px;
-  padding: 60px;
+  padding: 30px;
+
   align-items: center;
   justify-content: center;
   background-size:cover;
   border-radius: 25px;
+  outline: auto;
+  background-color: $blue;
+  max-width: $breakPoint;
 
   @media  (max-width: $breakPoint) {
-    height: 500px;
-    padding: 30px;
+    //blank
   }
 }
 
-.articleWrap {
-  max-width: 900px;
-
-  .article {
-    max-height: 100px;
-    overflow: scroll;
-  }
-  p {
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-    font-size: 1em;
-    color: #fff;
-
-    @media (max-width: $breakPoint) {
-      padding: 10px;
-    }
-  }
-
-  h2 {
-    font-size: 3em;
-    line-height: 1.1;
-    color: $white;
-    margin-bottom: 10px;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
-
-    @media (max-width: $breakPoint) {
-      font-size: 2.5em;
-    }
-  }
-
-  .post-btn {
-    font-size: 1em;
-    color: #fff;
-    background-color: $primaryColor;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.5s;
-
-    &:hover {
-      letter-spacing: 4px;
-    }
-  }
+.titleDate {
+  //blank
 }
+
+  //OLD FONT STYLES
+
+  // .article {
+  //   max-height: 100px;
+  //   overflow: scroll;
+  // }
+  // p {
+  //   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  //   font-size: 1em;
+  //   color: #fff;
+
+  //   @media (max-width: $breakPoint) {
+  //     padding: 10px;
+  //   }
+  // }
+
+  // h2 {
+  //   font-size: 3em;
+  //   line-height: 1.1;
+  //   color: $white;
+  //   margin-bottom: 10px;
+  //   text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  // }
 
