@@ -3,17 +3,22 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Blog from './components/Blog/Blog';
-
+import Vita from './components/Vita';
+import BookClub from './components/BookClub';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <div className="App">
-      <video className='appBg' src={'https://amplify-web-staging-11952-deployment.s3.us-west-1.amazonaws.com/VideoBgTrimH264.mp4'} autoPlay loop muted />
       <Router>
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/blog/:postTitle' element={<Blog />} />
+          <Route path='/vita' element={<Vita />} />
+          <Route path='/book-club' element={<BookClub />} />
+          <Route path='/projects' element={<Projects />} />
         </Routes>
       </Router>
     </div>

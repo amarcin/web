@@ -49,21 +49,20 @@ const Blog = () => {
   if (!Array.isArray(blogPosts) || !blogPosts.length) {
     return null
   }
-
   return (
     <div className='blog'>
       <div className="blog-card">
         {blogPosts.map((item) => {
-          const {id, postTitle, postByline, postArticle, postDate} = item
-          return (
-            <div className='blog-post'>
+          const { id, postTitle, postByline, postArticle, postDate } = item
+            return (
               <BlogPost key={id} postTitle={postTitle} postByline={postByline} postArticle={postArticle} postDate={postDate} />
-            </div>
-          ) 
-        })} 
+            )
+        })}
       </div>
     </div>
   )
 }
+
+// const blogID = blogPosts.findIndex(postTitle == blogPosts.window.location.pathname)
 
 export default Blog

@@ -15,20 +15,35 @@ const options = {
 }
 
 const BlogPost = (props) => {
-  const { id, postTitle, postByline, postArticle, postDate } = props
-
-  return (
-    <div className='postWrap'>
-      <div className='titleDate'>
-        <h2> {postTitle} </h2>
-        <h6> {postDate} </h6>
-      <div>
+  const { postTitle, postByline, postArticle, postDate } = props //include id item here if needed later
+  if (window.location.pathname === '/blog') {
+    return (
+      <a href={'/blog/' + postTitle.replace(/[^\w\s']/g, "").replace(/\s+/g, "-")}>
+        <div className='blog-post'>
+          <div className='title-date'>
+            <h1> {postTitle} </h1>
+            <h2> {postDate} </h2>
+          </div>
           <h3> {postByline} </h3>
-      </div>
-        {/* <div className='article'> {documentToReactComponents(postArticle, options)} </div> */}
-      </div>
-    </div>
-  )
+          {/* <div className='article'> {documentToReactComponents(postArticle, options)} </div> */}
+        </div>
+      </a>
+    )
+  }
+  else if (window.location.pathname === '/blog/' + postTitle.replace(/[^\w\s']/g, "").replace(/\s+/g, "-")) {
+    return (
+      <p>
+        <div className='blog-post'>
+          <div className='title-date'>
+            <h1> {postTitle} </h1>
+            <h2> {postDate} </h2>
+          </div>
+          <h3> {postByline} </h3>
+          <div className='article'> {documentToReactComponents(postArticle, options)} </div>
+        </div>
+      </p>
+    )
+  }
 }
 
 export default BlogPost

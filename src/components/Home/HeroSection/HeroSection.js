@@ -3,7 +3,8 @@ import React from "react"
 function HeroSection() {
   return (
     <div className="hero-container">
-      <h1>Augustin James Marcin</h1>
+      
+      <h1>Augustin Marcin</h1>
       <p className="hero-links">
         <a className="social-link" href="http://linkedin.com/in/augustinmarcin" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-linkedin-in"></i>
