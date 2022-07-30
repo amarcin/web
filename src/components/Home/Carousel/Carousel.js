@@ -9,7 +9,7 @@ import 'swiper/scss/pagination'
 import 'swiper/scss/mousewheel'
 import Loader from '../Loader/Loader'
 
-
+SwiperCore.use([Navigation, Mousewheel])
 
 const Carousel = () => {
   const [isCarouselLoading, setIsCarouselLoading] = useState(false)
@@ -59,8 +59,15 @@ const Carousel = () => {
 
   return (
     <div className='carousel'>
-      <Swiper navigation mousewheel={{forceToAxis: true, thresholdDelta: 90}} pagination={{dynamicBullets: true}}
-        modules={[Pagination]} loop centeredSlides slidesPerView={'1.2'} spaceBetween={100}>
+      <Swiper
+        navigation
+        mousewheel={{ forceToAxis: true, thresholdDelta: 90 }}
+        pagination={{ dynamicBullets: true }}
+        modules={[Pagination]}
+        loop
+        slidesPerView={'auto'}
+        spaceBetween={100}
+      >
         {carouselSlides.map((item) => {
           const {id, slideBg, slideTitle, slideDescription} = item
           return (

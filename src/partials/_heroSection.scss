@@ -1,32 +1,44 @@
 .hero-container {
-  height: 400px;
-  width: 100%;
-  display: inline-block;
+  
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   z-index: 1;
   position: relative;
   margin-top: 80px;
 }
 
-.hero-container > h1 {
-  color: #fff;
-  font-size: 64px;
-  align-items: center;
+.hero-text {
+  width: 90vw;
+  max-width: 1400px;
   padding: 50px;
 }
 
-.hero-container > p {
-  margin-top: 8px;
-  color: #fff;
+.hero-text > h1 {
+  color: $textColor;
+  font-size: 96px;
+  text-align: left;
+}
+
+.hero-text > h3 {
+  color: $textColor;
   font-size: 32px;
+  align-items: center;
+  text-align: right;
+}
+
+
+.hero-links {
+  margin-top: 8px;
+  font-size: 36px;
+  text-align: right;
+  padding-left: 100px;
 }
 
 .hero-links > a {
   display: inline-block;
-  color: #fff;
+  color: $textColor;
   transform: scale(1) rotate(0deg);
   transition: transform 0.3s;
 }

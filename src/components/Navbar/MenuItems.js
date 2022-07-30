@@ -15,8 +15,8 @@ export const MenuItems = [
     cName: 'nav-links'
   },
   {
-    title: 'Book Club',
-    url: '/book-club',
+    title: 'Press',
+    url: '/press',
     cName: 'nav-links'
-  }
+  },
 ]

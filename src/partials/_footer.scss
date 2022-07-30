@@ -1,0 +1,19 @@
+.footer-container {
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: $darkGrey;
+}
+
+.footer-wrap {
+  
+}
+
+.footer-text {
+  padding: 3px;
+  font-size: 1rem;
+  text-align: left;
+  color: #fff;
+}

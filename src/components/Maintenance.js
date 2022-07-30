@@ -14,7 +14,8 @@ const Maintenance = () => {
         style={{
           padding: '30px',
           borderRadius: '50px',
-          boxShadow: '0px 0px 50px rgb(220,220,220)'
+          backgroundColor: '#fff',
+          //boxShadow: '0px 0px 50px rgb(220,220,220)'
         }}
       >
         <h1

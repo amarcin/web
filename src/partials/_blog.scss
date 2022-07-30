@@ -19,15 +19,15 @@
   //Text styling
 
   a { font-family: 'Mulish', sans-serif; color: $textColor; text-decoration: none;}
-  a:visited { color: $lightGrey; }
+  //a:visited { color: $lightGrey; }
 
-  h1 { font-family: 'Nunito', sans-serif; line-height: 1.25; margin: 0 0 10px;  font-weight: bold;  text-decoration: none; }
+  h1 { font-family: 'Source Sans Pro', sans-serif; line-height: 1.25; margin: 0 0 10px;  font-weight: bold;  text-decoration: none; }
 
-  h2 { font-family: 'Nunito', sans-serif; line-height: 1.25; margin: 0 0 10px;  font-weight: bold;  text-decoration: none; }
+  h2 { font-family: 'Source Sans Pro', sans-serif; line-height: 1.25; margin: 0 0 10px;  font-weight: bold;  text-decoration: none; }
 
-  h3 { font-family: 'Nunito', sans-serif; line-height: 1.25; margin: 0 0 10px;  font-weight: bold;  text-decoration: none; text-align: left; }
+  h3 { font-family: 'Source Sans Pro', sans-serif; line-height: 1.25; margin: 0 0 10px;  font-weight: bold;  text-decoration: none; text-align: left; }
 
-  p { font-family: 'Mulish', sans-serif; color: $textColor; font-size: 16px; font-weight: 300; line-height: 1.5625; margin-bottom: 15px; }
+  p { font-family: 'Source Sans Pro', sans-serif; color: $textColor; font-size: 18px; font-weight: bold; line-height: 1.5; margin-bottom: 15px; }
 
   @media (max-width: $breakPoint) {
     h3 { text-align: right;}
