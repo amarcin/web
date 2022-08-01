@@ -6,7 +6,6 @@ function HeroSection() {
       <div className="hero-text">
       <h1>Augustin Marcin</h1>
       <h3>Amazon Web Services <i className="fa-brands fa-aws"></i> Cloud Engineer</h3>
-      <h3>Redefining youth education</h3>
       <p className="hero-links">
         <a className="social-link" href="http://linkedin.com/in/augustinmarcin" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-linkedin-in"></i>
