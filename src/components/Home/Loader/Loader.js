@@ -2,10 +2,10 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <div className='loaderWrap'>
-      <div className="loader-ripple">
-        <div></div>
-        <div></div>
+    <div class="css-1c3lhar">
+      <div class="css-10vmhha">
+      </div>
+      <div class="css-10vmhha">
       </div>
     </div>
   )

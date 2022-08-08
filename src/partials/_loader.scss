@@ -1,59 +1,26 @@
-.loaderWrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  scale: 300%;
+.css-10vmhha:nth-child(1) {
+    animation: 4s linear 0s infinite normal none running spin360, 1s linear 0s infinite alternate none running pulse;
 }
-
-.loader-ripple {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.loader-ripple div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  border: 4px solid $blue;
-  opacity: 1;
-  border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, .2, .8, 1) infinite;
-}
-.loader-ripple div:nth-child(2) {
-  animation-delay: -0.5s;
-}
-@keyframes lds-ripple {
-  0% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 0;
+.css-10vmhha {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    inset: 0px;
+    margin: auto;
+    border: 2px solid $black;
+    border-radius: 50%;
+ 
+  .css-10vmhha:nth-child(2) {
+    transform: rotate(90deg);
+    animation: 4s linear 0s infinite normal none running spin450, 1s linear 0s infinite alternate none running pulse;
   }
-  4.9% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  5% {
-    top: 36px;
-    left: 36px;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-  100% {
-    top: 0px;
-    left: 0px;
-    width: 72px;
-    height: 72px;
-    opacity: 0;
+  .css-10vmhha {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    inset: 0px;
+    margin: auto;
+    border: 2px solid $black;
+    border-radius: 50%;
   }
 }

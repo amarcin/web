@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Blog from './components/Blog/Blog';
 import Vita from './components/Vita';
 import Projects from './components/Projects';
+import Footer from './components/Navbar/Footer';
 
 function App() {
   return (

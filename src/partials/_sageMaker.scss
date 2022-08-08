@@ -1,0 +1,92 @@
+.sm-animation {
+body {
+  box-sizing: border-box;
+  font-family:  AmazonEmber, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color:#2D3949;
+  color: rgba(255,255,255,0.8);
+}
+
+div {
+  background-color: #2D3949;
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+svg {
+  width: 300px;
+  display: inline-block;
+  margin: 0;
+}
+
+svg .line1 {
+  stroke-dasharray: 340;
+  stroke-dashoffset: 40;
+  animation: dash 2s linear alternate infinite;
+}
+
+svg .line2 {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation: dash2 2s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 280;
+  }
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0px 0 10px 0;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 20px auto 10px auto;
+  width: 500px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 20px auto 10px auto;
+  width: 500px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 10px auto 10px auto;
+  width: 500px;
+}
+}
