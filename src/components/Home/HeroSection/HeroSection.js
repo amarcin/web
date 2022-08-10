@@ -5,12 +5,15 @@ import SageMaker from "./SageMaker"
 function HeroSection() {
   return (
     <div className="hero-container">
-      <div className="hero-text">
-        <SageMaker />
-        {/* <Loader /> */}
+      <div className="name-bar">
         <h1>Augustin Marcin</h1>
+        <SageMaker />
+      </div>
+      <div className="hero-bar">
+        {/* <Loader /> */}
         <h3>Cloud Engineer</h3>
-        <h3>Amazon Web Services <i className="fa-brands fa-aws"></i> </h3>
+        <h3 className="ai">Artificial Intelligence Specialist <i class="fa-solid fa-arrow-right"></i></h3>
+        <h3 className="aws">Amazon Web Services <i className="fa-brands fa-aws"></i> <i class="fa-solid fa-arrow-right"></i></h3>
         <p className="hero-links">
           <a className="social-link" href="http://linkedin.com/in/augustinmarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-linkedin-in"></i>
