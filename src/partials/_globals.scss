@@ -13,13 +13,21 @@ body {
   padding: 0;
   color: $textColor;
   font-family: 'Source Sans Pro';
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $white;
+  background-color: $background;
 }
-
+a {
+  color: $textColor;
+  text-decoration: none;
+}
 h1 {
   font-family: 'Poppins';
+}
+
+h3 {
+  font-weight: 400;
 }
 
 section {

@@ -6,6 +6,7 @@ import Blog from './components/Blog/Blog';
 import Vita from './components/Vita';
 import Projects from './components/Projects';
 import Footer from './components/Navbar/Footer';
+import Press from './components/Press';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/blog/:postTitle' element={<Blog />} />
           <Route path='/vita' element={<Vita />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/press' element={<Press />} />
         </Routes>
       </Router>
     </div>
