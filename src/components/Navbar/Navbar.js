@@ -13,6 +13,7 @@ class Navbar extends Component {
       <nav className='NavbarItems'>
         <a className='navbar-logo' href="/">
           <img src='https://amplify-web-staging-11952-deployment.s3.us-west-1.amazonaws.com/Logo-Letters-Trimmed-White-Transparent.png' className="navbar-logo" alt='logo-white-transparent' />
+          <div className="pixels"> </div>
         </a>
         <div className='menu-icon' onClick={this.handleClick}>
           <i className={this.state.clicked ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>

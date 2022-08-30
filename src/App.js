@@ -7,6 +7,7 @@ import Vita from './components/Vita';
 import Projects from './components/Projects';
 import Footer from './components/Navbar/Footer';
 import Press from './components/Press';
+import Carousel from './components/Home/Carousel/Carousel';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/blog/:postTitle' element={<Blog />} />
           <Route path='/vita' element={<Vita />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/projects/:slideTitle' element={<Carousel />} />
           <Route path='/press' element={<Press />} />
         </Routes>
       </Router>

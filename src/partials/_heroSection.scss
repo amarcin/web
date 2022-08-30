@@ -6,7 +6,7 @@
   z-index: 1;
   position: relative;
   margin-top: 80px;
-  background-color: $background;
+  background-color: $white1;
   padding: 30px 0px 30px 0px;
 }
 
@@ -24,6 +24,7 @@
     display:contents;
   }
 }
+
 .name-bar > h1 {
   color: $textColor;
   font-size: 96px;
@@ -41,7 +42,6 @@
   align-items: center;
   text-align: right;
 }
-
 
 .hero-links {
   margin-top: 8px;

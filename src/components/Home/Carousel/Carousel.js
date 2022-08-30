@@ -2,14 +2,12 @@ import React, { useState, useEffect, useCallback } from 'react'
 import {client} from '../../../client'
 import CarouselSlide from './CarouselSlide'
 import { Swiper, SwiperSlide, } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination, Mousewheel } from 'swiper'
+import SwiperCore, { Navigation, Pagination } from 'swiper'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
-import 'swiper/scss/pagination'
-import 'swiper/scss/mousewheel'
 import Loader from '../Loader/Loader'
 
-SwiperCore.use([Navigation, Mousewheel])
+SwiperCore.use([Navigation, Pagination])
 
 const Carousel = () => {
   const [isCarouselLoading, setIsCarouselLoading] = useState(false)
@@ -61,12 +59,12 @@ const Carousel = () => {
     <div className='carousel'>
       <Swiper
         navigation
-        mousewheel={{ forceToAxis: true, thresholdDelta: 90 }}
-        pagination={{ dynamicBullets: true }}
-        modules={[Pagination]}
         loop
-        slidesPerView={'auto'}
-        spaceBetween={100}
+        slidesPerView={1.5}
+        centeredSlides
+        roundLengths
+        slideToClickedSlide
+        pagination
       >
         {carouselSlides.map((item) => {
           const {id, slideBg, slideTitle, slideDescription} = item
