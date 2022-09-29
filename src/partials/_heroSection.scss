@@ -13,7 +13,6 @@
 .hero-bar {
   width: 90vw;
   max-width: 1400px;
-  //padding: 40px;
   white-space: nowrap;
     overflow: hidden;
 }
@@ -28,7 +27,8 @@
 .name-bar > h1 {
   color: $textColor;
   font-size: 96px;
-  font-weight: 200;
+  font-family: Advent Pro;
+  font-weight: 400;
   text-align: center;
   padding: 0px 30px 0px 30px;
   @media (max-width: $breakPoint) {

@@ -7,8 +7,8 @@ function HeroSection() {
     <div className="hero-container">
       <div className="name-bar">
         <h1>Augustin Marcin</h1>
-        <SageMaker />
       </div>
+      <SageMaker />
       <div className="hero-bar">
         {/* <Loader /> */}
         <h3>Cloud Engineer</h3>
@@ -34,6 +34,7 @@ function HeroSection() {
           <a className="social-link" href="https://twitter.com/AugustinMarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-twitter"></i>
           </a>
+          &nbsp;
         </p>
       </div>  
     </div>

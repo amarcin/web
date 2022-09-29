@@ -11,7 +11,7 @@ export const MenuItems = [
   },
   {
     title: 'Blog',
-    url: '/blog',
+    url: 'https://medium.com/@augustinmarcin',
     cName: 'nav-links'
   },
   {

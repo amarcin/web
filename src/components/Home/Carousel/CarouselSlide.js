@@ -1,4 +1,5 @@
 import React from 'react'
+import Swiper from 'swiper'
 
 const CarouselSlide = (props) => {
   const {slideTitle, slideDescription, slideBg} = props //add id tag if necessary
@@ -25,6 +26,19 @@ const CarouselSlide = (props) => {
           <p>
             {slideDescription}
           </p>
+        </div>
+      </div>
+    )
+  }
+  else {
+    //href={'/projects/' + slideTitle.replace(/[^\w\s']/g, "").replace(/\s+/g, "-")}
+    return (
+      <div className='slideWrap' id={slideTitle} style={{ backgroundImage: `url(${slideBg})` }}>
+        <div className='slideWrap' style={{ backgroundImage: `url(${slideBg}` }}>
+          <div className='textWrap'>
+            <h2> {slideTitle} </h2>
+            <p> {slideDescription} </p>
+          </div>
         </div>
       </div>
     )

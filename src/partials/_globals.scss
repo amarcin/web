@@ -13,7 +13,6 @@ body {
   padding: 0;
   color: $textColor;
   font-family: 'Source Sans Pro';
-  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background;
@@ -23,7 +22,12 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
 }
 
 h3 {

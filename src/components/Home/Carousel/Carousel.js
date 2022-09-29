@@ -65,9 +65,12 @@ const Carousel = () => {
         roundLengths
         slideToClickedSlide
         pagination
+        updateOnWindowResize
+        centeredSlidesBounds
+        initialSlide
       >
         {carouselSlides.map((item) => {
-          const {id, slideBg, slideTitle, slideDescription} = item
+          const { id, slideBg, slideTitle, slideDescription } = item
           return (
             <SwiperSlide>
               <CarouselSlide key={id} slideTitle={slideTitle} slideDescription={slideDescription} slideBg={slideBg} />
