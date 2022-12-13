@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Maintenance = () => {
-  
+
   return (
     <div
       style={{
@@ -25,7 +25,7 @@ const Maintenance = () => {
             //textShadow: '0px 0px 4px #000',
           }}
         >
-        Site under maintenance
+          Site under maintenance
         </h1>
         <h2
           style={{
@@ -37,8 +37,22 @@ const Maintenance = () => {
             //textShadow: '0px 0px 2px #000',
           }}
         >
-        It should be up and running soon. Thanks for your patience. 
+          It should be up and running soon. Thanks for your patience.
         </h2>
+        <h3
+          style={{
+            position: 'relative',
+            textAlign: 'center',
+            fontSize: '18px',
+            padding: '10px',
+            color: 'black',
+            fontWeight: '400',
+            //textShadow: '0px 0px 2px #000',
+          }}
+        >
+          Err 503
+        </h3>
+
       </div>
     </div>
   )

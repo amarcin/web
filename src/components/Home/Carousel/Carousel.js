@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import {client} from '../../../client'
+import { client } from '../../../client'
 import CarouselSlide from './CarouselSlide'
 import { Swiper, SwiperSlide, } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
@@ -24,7 +24,7 @@ const Carousel = () => {
       return updatedSlide
     })
     setCarouselSlides(cleanSlides)
-  },[])
+  }, [])
 
   const getCarouselSlides = useCallback(async () => {
     setIsCarouselLoading(true)
@@ -35,7 +35,7 @@ const Carousel = () => {
       else { setCarouselSlides([]) }
       setIsCarouselLoading(false)
     }
-    
+
     catch (error) {
       console.log(error)
       setIsCarouselLoading(false)
@@ -63,7 +63,6 @@ const Carousel = () => {
         slidesPerView={1.5}
         centeredSlides
         roundLengths
-        slideToClickedSlide
         pagination
         updateOnWindowResize
         centeredSlidesBounds
@@ -75,8 +74,8 @@ const Carousel = () => {
             <SwiperSlide>
               <CarouselSlide key={id} slideTitle={slideTitle} slideDescription={slideDescription} slideBg={slideBg} />
             </SwiperSlide>
-          ) 
-        })} 
+          )
+        })}
       </Swiper>
     </div>
   )

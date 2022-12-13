@@ -18,6 +18,7 @@ body {
   background-color: $background;
 }
 a {
+  font-family: 'Source Sans Pro', sans-serif;
   color: $textColor;
   text-decoration: none;
 }
@@ -26,12 +27,12 @@ h1 {
 }
 
 h2 {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Chillax', sans-serif;
   font-weight: 400;
 }
 
 h3 {
-  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 section {

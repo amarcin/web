@@ -1,4 +1,5 @@
 import * as contentful from 'contentful'
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 //commenting out references until issue is resolved (SECURITY ISSUE)
 export const client = contentful.createClient({

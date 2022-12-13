@@ -1,4 +1,5 @@
 .NavbarItems {
+  all: initial;
   height: 50px;
   top: 0;
   display: flex;
@@ -13,11 +14,13 @@
 }
 
 .navbar-logo {
+  all: initial;
   justify-self: start;
   height: 25px;
 }
 
 .nav-menu {
+  all: initial;
   display: grid;
   position: relative;
   grid-template-columns: repeat(5,auto);
@@ -30,8 +33,12 @@
 .nav-links {
   color: $white2;
   text-decoration: none;
+  position: inherit;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease-out;
+  font-family: 'Chillax', sans-serif;
+  font-size: large;
+  font-weight: 400;
 }
 
 .nav-links:hover{
