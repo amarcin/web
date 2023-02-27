@@ -51,23 +51,30 @@
 
 //==============================================================================
 
-.projDetailWrapper {
+.projDetailCard {
   width: 80vw;
   max-width: $contentMaxWidth;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
   background-color: $white1;
+  border-radius: $bigBorRad;
+  overflow: hidden;
 }
 
 .projBigImg {
-
+  max-height: 32vw;
+  width: 100%;
+  object-fit: contain;
 }
 
 .projTitle2 {
   text-align: center;
+  margin: 0;
+  padding: 30px;
 }
 
 .projEntry {
+  padding: 0 50px 50px 50px;
   text-align: left;
 }

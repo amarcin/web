@@ -3,8 +3,6 @@ import { client } from '../client';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Loader from './Home/Loader/Loader';
 
-
-
 const Projects = () => {
   const [projects, setProjects] = useState({})
   const [isProjectsLoading, setIsProjectsLoading] = useState(false)
@@ -90,26 +88,11 @@ const Projects = () => {
 
   }
 
-  //     else if (window.location.pathname === '/projects/') {
-  //   console.log('details page')
-  //   detailsPage()
-  // }
-  // else {
-  //   console.log('nothing here')
-  //   return (
-  //     <div>
-  //       <h1>Nothing here. </h1>
-  //     </div>
-  //   )
-  // }
-
-
   function mapper() {
     return projects.map((item) => {
       const { projTitle, projDescription, projBg, projEntry } = item
       return item.projTitle
     })
-
   }
 
   function looper() {
@@ -124,47 +107,27 @@ const Projects = () => {
 
   function projectsPage() {
     return (
-      <div>
-        {/* <Container className='projWrapper'>
-          {
-            projects.map((item) => {
-              const { projTitle, projDescription, projBg, projEntry } = item
-              return (
-                <>
-                  <Card classname='projCards' onClick={() => window.location.href = '/projects/' + removePunctuation(projTitle)} border='0' style={{ margin: '10px', cursor: 'pointer', transition: 'all ease 200ms' }}>
-                    <Card.Img classname='projImgs' variant="top" src={projBg} alt={projTitle} style={{ height: '18rem', objectFit: "cover" }} />
-                    <Card.Text as="h2" style={{ padding: '20px 0 0 20px' }}>{projTitle}</Card.Text>
-                    <Card.Body>
-                      <Card.Text>{projDescription}</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </>
-              )
-            })
-          }
-        </Container> */}
-        <div className='projCont'>
-          {
-            projects.map((item) => {
-              const { projTitle, projDescription, projBg, projEntry } = item
-              const link = "/projects/" + removePunctuation(projTitle)
-              return (
-                <>
-                  <a className='cardRef' href={link}>
-                    <div className='projCard'>
-                      <img className='projImg' src={projBg} alt={projTitle} />
-                      <div className='projText'>
-                        <h4 className='projTitle'>{projTitle}</h4>
-                        <p className='projDesc' >{projDescription}</p>
-                      </div>
+      <div className='projCont'>
+        {
+          projects.map((item) => {
+            const { projTitle, projDescription, projBg, projEntry } = item
+            const link = "/projects/" + removePunctuation(projTitle)
+            return (
+              <>
+                <a className='cardRef' href={link}>
+                  <div className='projCard'>
+                    <img className='projImg' src={projBg} alt={projTitle} />
+                    <div className='projText'>
+                      <h4 className='projTitle'>{projTitle}</h4>
+                      <p className='projDesc' >{projDescription}</p>
                     </div>
-                  </a>
-                </>
-              )
-            })
-          }
-        </div>
-      </div >
+                  </div>
+                </a>
+              </>
+            )
+          })
+        }
+      </div>
     )
   }
 
@@ -174,9 +137,9 @@ const Projects = () => {
     console.log('projectdetails page')
     return (
       <>
-        <div className='projDetailWrapper'>
-          <div classname='projDetailCard'>
-            <img classname='projBigImg' src={projBg} alt={projTitle} />
+        <div className='projDetailCard'>
+          <img className='projBigImg' src={projBg} alt={projTitle} />
+          <div className="projText2">
             <h1 className='projTitle2'>{projTitle}</h1>
             <p className='projEntry'>{projEntry}</p>
           </div>
