@@ -56,14 +56,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    top: -380px;
+    top: -350px;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
     position: absolute;
     transition: all 0.5s ease;
-    top: 80px;
+    top: 50px;
   }
 
   .nav-links {
@@ -75,6 +75,7 @@
     display: table;
     font-size: x-large;
     background-color: $darkGrey;
+    margin: -1px;
   }
 
   .navbar-logo {

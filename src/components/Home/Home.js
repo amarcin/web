@@ -9,7 +9,7 @@ function Home() {
     <div className="home">
       <div className="home-container">
         <HeroSection />
-        <Carousel />
+        {/* <Carousel /> */}
       </div>
       {/* <Footer /> */}
     </div>

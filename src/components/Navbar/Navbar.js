@@ -3,9 +3,9 @@ import { MenuItems } from './MenuItems'
 
 class Navbar extends Component {
   state = { clicked: false }
-  
+
   handleClick = () => {
-    this.setState({clicked: !this.state.clicked})
+    this.setState({ clicked: !this.state.clicked })
   }
 
   render() {
@@ -29,10 +29,10 @@ class Navbar extends Component {
                 </li>
               )
             }
-            else 
+            else
               return (
                 <li key={item.title}>
-                
+
                   <a className={item.cName} href={item.url}>
                     {item.title}
                   </a>

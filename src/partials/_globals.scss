@@ -20,8 +20,8 @@ body {
 a {
   font-family: 'Source Sans Pro', sans-serif;
   color: $textColor;
-  text-decoration: none;
 }
+
 h1 {
   font-family: 'Poppins', sans-serif;
 }
@@ -33,6 +33,22 @@ h2 {
 
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
 }
 
 section {

@@ -1,0 +1,73 @@
+.projCont {
+  width: 80vw;
+  max-width: $contentMaxWidth;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.projCard {
+  display: inline-block;
+  height: 460px;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: $white1;
+  margin: 45px 40px 5px 40px;
+  cursor: pointer;
+}
+
+.projCard {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.projCard:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s;
+} 
+
+.projImg {
+  background-color: $white1;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.projText {
+  
+}
+
+.projTitle {
+  padding: 20px 10px 5px 10px;
+  // as="h2" style={{ padding: '20px 0 0 20px' }
+}
+
+.projDesc {
+  padding: 0 25px 0 25px;
+  text-align: center;
+}
+
+//==============================================================================
+
+.projDetailWrapper {
+  width: 80vw;
+  max-width: $contentMaxWidth;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  background-color: $white1;
+}
+
+.projBigImg {
+
+}
+
+.projTitle2 {
+  text-align: center;
+}
+
+.projEntry {
+  text-align: left;
+}

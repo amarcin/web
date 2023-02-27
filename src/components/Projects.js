@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Card, Container, Row, Col, CardGroup, Button } from 'react-bootstrap';
 import { client } from '../client';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Loader from './Home/Loader/Loader';
-import { map } from 'itertools';
+
 
 
 const Projects = () => {
@@ -118,7 +117,6 @@ const Projects = () => {
       return mapper()[i]
     }
   }
-  //console.log(projects.map((item) => { return item.projTitle }))
 
   function removePunctuation(text) {
     return text.replace(/[^\w\s]/gi, '').replace(/\s+/g, '-')
@@ -127,7 +125,7 @@ const Projects = () => {
   function projectsPage() {
     return (
       <div>
-        <Container className='projWrapper'>
+        {/* <Container className='projWrapper'>
           {
             projects.map((item) => {
               const { projTitle, projDescription, projBg, projEntry } = item
@@ -144,7 +142,28 @@ const Projects = () => {
               )
             })
           }
-        </Container>
+        </Container> */}
+        <div className='projCont'>
+          {
+            projects.map((item) => {
+              const { projTitle, projDescription, projBg, projEntry } = item
+              const link = "/projects/" + removePunctuation(projTitle)
+              return (
+                <>
+                  <a className='cardRef' href={link}>
+                    <div className='projCard'>
+                      <img className='projImg' src={projBg} alt={projTitle} />
+                      <div className='projText'>
+                        <h4 className='projTitle'>{projTitle}</h4>
+                        <p className='projDesc' >{projDescription}</p>
+                      </div>
+                    </div>
+                  </a>
+                </>
+              )
+            })
+          }
+        </div>
       </div >
     )
   }
@@ -152,18 +171,16 @@ const Projects = () => {
 
   function detailsPage(item) {
     const { projTitle, projDescription, projBg, projEntry } = item
+    console.log('projectdetails page')
     return (
       <>
-        <Container className='projDetailWrapper'>
-          <Card classname='projDetailCard' border='0' style={{ transition: 'all ease 200ms' }}>
-            <Card.Img classname='projBigImgs' variant="top" src={projBg} alt={projTitle} style={{ objectFit: "cover" }} />
-            <Card.Text as="h1" className='entryText'>{projTitle}</Card.Text>
-            <Card.Body>
-              {console.log(projEntry)}
-              <Card.Text>{projEntry}</Card.Text>
-            </Card.Body>
-          </Card>
-        </Container>
+        <div className='projDetailWrapper'>
+          <div classname='projDetailCard'>
+            <img classname='projBigImg' src={projBg} alt={projTitle} />
+            <h1 className='projTitle2'>{projTitle}</h1>
+            <p className='projEntry'>{projEntry}</p>
+          </div>
+        </div>
       </>
     )
   }

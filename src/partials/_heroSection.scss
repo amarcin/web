@@ -14,7 +14,7 @@
   width: 90vw;
   max-width: 1400px;
   white-space: nowrap;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 *,
@@ -78,17 +78,32 @@
   transition: 0.3s;
 }
 
+.ai > a, .aws > a {
+	text-decoration: none;
+}
+
 .ai:hover, .aws:hover {
   left: 0px;
 }
 
+.ai:hover > a, .aws:hover > a {
+	color: $textColor;
+	text-decoration: none;
+}
+
 //phone edits
 @media (max-width: $breakPoint) {
-    .hero-bar > h3{
-// change to fit on iphone
-    }
+	.hero-bar > h3{
+		font-size: 22px;
+		padding-right: 12px;
   }
 
+	.ai, .aws {
+		left: 0px;
+	}
+}
+
+//==============================================================================
 
 // Bird Animation styling <https://codepen.io/matchboxhero/pen/RLebOY?editors=1100>
 .container {

@@ -1,6 +1,7 @@
 import React from "react"
 import Loader from "../Loader/Loader"
 import SageMaker from "./SageMaker"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function HeroSection() {
   return (
@@ -41,12 +42,12 @@ function HeroSection() {
             <i className="fa-brands fa-instagram"></i>
           </a>
           &nbsp;&nbsp;&nbsp;
-          <a className="social-link" href="https://youtube.com/channel/UCd14Jj1HKAUFUZckWwSjZ3A" target="_blank" rel="noopener noreferrer">
+          <a className="social-link" href="https://www.youtube.com/@augustinmarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-youtube"></i>
           </a>
           &nbsp;&nbsp;&nbsp;
-          <a className="social-link" href="https://twitter.com/AugustinMarcin" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-twitter"></i>
+          <a className="social-link" href="https://poly.me/augmar" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-diagram-project"></i>
           </a>
           &nbsp;
         </p>
