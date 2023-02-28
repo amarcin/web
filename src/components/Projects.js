@@ -3,6 +3,7 @@ import { client } from '../client';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Loader from './Home/Loader/Loader';
 
+
 const Projects = () => {
   const [projects, setProjects] = useState({})
   const [isProjectsLoading, setIsProjectsLoading] = useState(false)
@@ -141,7 +142,7 @@ const Projects = () => {
           <img className='projBigImg' src={projBg} alt={projTitle} />
           <div className="projText2">
             <h1 className='projTitle2'>{projTitle}</h1>
-            <p className='projEntry'>{projEntry}</p>
+            <div className='projEntry'>{projEntry}</div>
           </div>
         </div>
       </>

@@ -15,9 +15,6 @@
   background-color: $white1;
   margin: 45px 40px 5px 40px;
   cursor: pointer;
-}
-
-.projCard {
   transform: scale(1);
   transition: transform 0.3s;
 }
@@ -41,11 +38,13 @@
 
 .projTitle {
   padding: 20px 10px 5px 10px;
+  font-size: 24px;
   // as="h2" style={{ padding: '20px 0 0 20px' }
 }
 
 .projDesc {
   padding: 0 25px 0 25px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -73,8 +72,71 @@
   margin: 0;
   padding: 30px;
 }
-
+// ============ Applying entry styling =============
 .projEntry {
   padding: 0 50px 50px 50px;
   text-align: left;
+}
+
+.projEntry p {
+
+}
+
+.projEntry h1, h2, h3, h4, h5, h6 {
+  
+}
+
+.projEntry h1 {
+  padding-bottom: 36px;
+}
+
+.projEntry h2 {
+  padding-bottom: 32px;
+}
+
+.projEntry table {
+  border-collapse: collapse;
+
+  width: 100%;
+  border: 1px solid #d3dce0;
+}
+
+.projEntry th,
+.projEntry td {
+  padding: 12px 16px;
+  border: 1px solid #d3dce0;
+}
+
+.projEntry th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Add a grey background to the first row of the table */
+.projEntry th {
+  background-color: #f2f2f2;
+}
+
+.projEntry th,
+.projEntry td {
+  padding: 12px 16px;
+  border: 1px solid #d3dce0;
+}
+
+/* Add Forma 36 styles to the table */
+.projEntry table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #d3dce0;
+}
+
+.projEntry th {
+  font-weight: bold;
+  text-align: left;
+  background-color: #f2f2f2;
+  padding: 12px 16px;
+}
+
+.projEntry td {
+  padding: 12px 16px;
 }
