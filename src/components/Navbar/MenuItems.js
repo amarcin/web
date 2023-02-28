@@ -1,9 +1,9 @@
 export const MenuItems = [
-  {
-    title: 'Vita',
-    url: '/vita',
-    cName: 'nav-links'
-  }, 
+  // {
+  //   title: 'Vita',
+  //   url: '/vita',
+  //   cName: 'nav-links'
+  // }, 
   {
     title: 'Projects',
     url: '/projects',
@@ -14,9 +14,9 @@ export const MenuItems = [
     url: 'https://medium.com/@augustinmarcin',
     cName: 'nav-links'
   },
-  {
-    title: 'Press',
-    url: '/press',
-    cName: 'nav-links'
-  },
+  // {
+  //   title: 'Press',
+  //   url: '/press',
+  //   cName: 'nav-links'
+  // },
 ]
