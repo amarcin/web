@@ -19,4 +19,9 @@ export const MenuItems = [
   //   url: '/press',
   //   cName: 'nav-links'
   // },
+  {
+    title: 'Meet with me!',
+    url: 'https://prelude.amazon.com/s/fmjzTgAZu/ffHZB/-/augustin-marcin',
+    cName: 'nav-links'
+  }
 ]

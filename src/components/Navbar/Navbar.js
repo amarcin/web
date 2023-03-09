@@ -20,7 +20,7 @@ class Navbar extends Component {
         </div>
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           {MenuItems?.map((item, index) => {
-            if (item.title === 'Blog') {
+            if (item.title === 'Blog' || item.title === 'Meet with me!') {
               return (
                 <li key={item.title}>
                   <a className={item.cName} href={item.url} target="_blank" rel="noopener noreferrer">
