@@ -30,24 +30,38 @@ function HeroSection() {
         <h3 className="ai"><a href="https://medium.com/@augustinmarcin/machine-learning-the-sparknotes-version-3b66c5dfc4b" target="_blank" rel="noreferrer"> Artificial Intelligence Specialist <i className="fa-solid fa-arrow-right"></i></a></h3>
         <h3 className="aws"><a href="https://aws.amazon.com/what-is-aws/" target="_blank" rel="noreferrer">Amazon Web Services <i className="fa-brands fa-aws"></i> <i className="fa-solid fa-arrow-right"></i></a></h3>
         <p className="hero-links">
+          {/* LinkedIn */}
           <a className="social-link" href="http://linkedin.com/in/augustinmarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
           &nbsp;&nbsp;&nbsp;
-          <a className="social-link" href="https://github.com/amarcin" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-github-alt"></i>
-          </a>
-          &nbsp;&nbsp;&nbsp;
+          {/* Instagram */}
           <a className="social-link" href="https://www.instagram.com/augustinmarcin/" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-instagram"></i>
           </a>
           &nbsp;&nbsp;&nbsp;
+          {/* GitHub */}
+          <a className="social-link" href="https://github.com/amarcin" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-github-alt"></i>
+          </a>
+          {/* &nbsp;&nbsp;&nbsp;
           <a className="social-link" href="https://www.youtube.com/@augustinmarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-youtube"></i>
+          </a> */}
+          &nbsp;&nbsp;&nbsp;
+          {/* Phone call */}
+          <a className="social-link" href="tel:+19168735465" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-phone-flip"></i>
           </a>
           &nbsp;&nbsp;&nbsp;
-          <a className="social-link" href="https://poly.me/augmar" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-diagram-project"></i>
+          {/* Text */}
+          <a className="social-link" href="sms:+19168735465" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-message" />
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          {/* Email */}
+          <a className="social-link" href="mailto:info@augustin.club" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-envelope"></i>
           </a>
           &nbsp;
         </p>
