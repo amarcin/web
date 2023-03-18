@@ -34,12 +34,10 @@ function HeroSection() {
           <a className="social-link" href="http://linkedin.com/in/augustinmarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
-          &nbsp;&nbsp;&nbsp;
           {/* Instagram */}
           <a className="social-link" href="https://www.instagram.com/augustinmarcin/" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          &nbsp;&nbsp;&nbsp;
           {/* GitHub */}
           <a className="social-link" href="https://github.com/amarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-github-alt"></i>
@@ -48,22 +46,18 @@ function HeroSection() {
           <a className="social-link" href="https://www.youtube.com/@augustinmarcin" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-youtube"></i>
           </a> */}
-          &nbsp;&nbsp;&nbsp;
           {/* Phone call */}
           <a className="social-link" href="tel:+19168735465" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-phone-flip"></i>
           </a>
-          &nbsp;&nbsp;&nbsp;
           {/* Text */}
           <a className="social-link" href="sms:+19168735465" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-message" />
           </a>
-          &nbsp;&nbsp;&nbsp;
           {/* Email */}
           <a className="social-link" href="mailto:info@augustin.club" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-envelope"></i>
           </a>
-          &nbsp;
         </p>
       </div>
     </div>

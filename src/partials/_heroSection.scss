@@ -55,6 +55,9 @@
   margin-bottom: 8px;
   font-size: 36px;
   text-align: right;
+	@media (max-width: $breakPoint) {
+    text-align: center;
+  }
 }
 
 .hero-links > a {
@@ -62,6 +65,7 @@
   color: $textColor;
   transform: scale(1) rotate(0deg);
   transition: transform 0.3s;
+	padding: 10px;
 }
 .hero-links > a:hover {
   display: inline-block;

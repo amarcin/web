@@ -4,6 +4,9 @@
   margin: auto;
   margin-top: 50px;
   text-align: center;
+  @media (max-width: $breakPoint) {
+    margin: 50px 0 0 0;
+  }
 }
 
 .projCard {
