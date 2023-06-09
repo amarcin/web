@@ -26,8 +26,7 @@ function HeroSection() {
       <SageMaker />
       <div className="hero-bar">
         {/* <Loader /> */}
-        <h3>Cloud Engineer</h3>
-        <h3 className="ai"><a href="https://medium.com/@augustinmarcin/machine-learning-the-sparknotes-version-3b66c5dfc4b" target="_blank" rel="noreferrer"> Artificial Intelligence Specialist <i className="fa-solid fa-arrow-right"></i></a></h3>
+        <h3 className="ai"><a href="https://medium.com/@augustinmarcin/machine-learning-the-sparknotes-version-3b66c5dfc4b" target="_blank" rel="noreferrer">Machine Learning Engineer  <i className="fa-solid fa-arrow-right"></i></a></h3>
         <h3 className="aws"><a href="https://aws.amazon.com/what-is-aws/" target="_blank" rel="noreferrer">Amazon Web Services <i className="fa-brands fa-aws"></i> <i className="fa-solid fa-arrow-right"></i></a></h3>
         <p className="hero-links">
           {/* LinkedIn */}

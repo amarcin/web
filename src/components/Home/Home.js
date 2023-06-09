@@ -3,6 +3,7 @@ import Footer from '../Navbar/Footer';
 import Carousel from './Carousel/Carousel';
 import HeroSection from './HeroSection/HeroSection'
 import Loader from './Loader/Loader';
+import Projects from '../Projects'
 
 function Home() {
   return (
@@ -10,6 +11,9 @@ function Home() {
       <div className="home-container">
         <HeroSection />
         {/* <Carousel /> */}
+      </div>
+      <div className='projCont'>
+        <Projects />
       </div>
       {/* <Footer /> */}
     </div>
